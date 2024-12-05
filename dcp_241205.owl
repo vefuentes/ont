@@ -1,0 +1,1201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://welle/dcp#"
+     xml:base="http://welle/dcp"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:arco="http://purl.org/aro/arco#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://purl.org/aro/dcp">
+        <owl:imports rdf:resource="http://purl.org/aro/arc"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/aro/arco#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/aro/arco#definition"/>
+    
+
+
+    <!-- http://purl.org/aro/arco#definition_source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/aro/arco#definition_source"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://welle/dcp#Accident -->
+
+    <owl:Class rdf:about="http://welle/dcp#Accident">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Involuntary_Reason"/>
+        <rdfs:label xml:lang="en">Accident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Accumulated_Yield -->
+
+    <owl:Class rdf:about="http://welle/dcp#Accumulated_Yield">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quantity_Trait"/>
+        <rdfs:label xml:lang="en">Accumulated Yield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Age_or_Fatigue -->
+
+    <owl:Class rdf:about="http://welle/dcp#Age_or_Fatigue">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Involuntary_Reason"/>
+        <rdfs:label xml:lang="en">Age or Fatigue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Average_Yield -->
+
+    <owl:Class rdf:about="http://welle/dcp#Average_Yield">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quantity_Trait"/>
+        <rdfs:label xml:lang="en">Average Yield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#BCA_Fat -->
+
+    <owl:Class rdf:about="http://welle/dcp#BCA_Fat">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Yield_Index"/>
+        <rdfs:label xml:lang="en">BCA Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#BCA_Milk -->
+
+    <owl:Class rdf:about="http://welle/dcp#BCA_Milk">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Yield_Index"/>
+        <rdfs:label xml:lang="en">BCA Milk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#BCA_Protein -->
+
+    <owl:Class rdf:about="http://welle/dcp#BCA_Protein">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Yield_Index"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Behaviour_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Behaviour_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <rdfs:label xml:lang="en">Behaviour Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Condition -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Condition">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <rdfs:label xml:lang="en">Body Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Condition_Score -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Condition_Score">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Body_Condition"/>
+        <arco:definition xml:lang="en">An animal&apos;s body condition score (BCS) is a numerical rating that estimates an animal&apos;s fat, muscle level, and overall health.</arco:definition>
+        <arco:definition_source xml:lang="en">???</arco:definition_source>
+        <rdfs:label xml:lang="en">Body Condition Score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Condition_Scoring -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Condition_Scoring">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Body Condition Scoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Conformation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Conformation">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <rdfs:label xml:lang="en">Body Conformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Height -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Height">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Body_Conformation"/>
+        <rdfs:label xml:lang="en">Body Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Height_Measurement -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Height_Measurement">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Body Height Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Weight -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Weight">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Body_Condition"/>
+        <arco:definition xml:lang="en">Any measurable characteristic related to the body weight of an animal.</arco:definition>
+        <arco:definition_source>ATOL</arco:definition_source>
+        <rdfs:label xml:lang="en">Body Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Body_Weight_Measurement -->
+
+    <owl:Class rdf:about="http://welle/dcp#Body_Weight_Measurement">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Body Weight Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Bovine -->
+
+    <owl:Class rdf:about="http://welle/dcp#Bovine">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Animal"/>
+        <rdfs:label xml:lang="en">Bovine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Breed -->
+
+    <owl:Class rdf:about="http://welle/dcp#Breed">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Physical_Trait"/>
+        <rdfs:label xml:lang="en">Breed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Bull -->
+
+    <owl:Class rdf:about="http://welle/dcp#Bull">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Bovine"/>
+        <rdfs:label xml:lang="en">Bull</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Calving_Ease_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Calving_Ease_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Calving Ease Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Conformation_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Conformation_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Conformation Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Conformation_Scoring -->
+
+    <owl:Class rdf:about="http://welle/dcp#Conformation_Scoring">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Conformation Scoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Contagious_Desease -->
+
+    <owl:Class rdf:about="http://welle/dcp#Contagious_Desease">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Voluntary_Reason"/>
+        <rdfs:label xml:lang="en">Contagious Desease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Cow -->
+
+    <owl:Class rdf:about="http://welle/dcp#Cow">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Bovine"/>
+        <rdfs:label xml:lang="en">Cow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Cow_Function -->
+
+    <owl:Class rdf:about="http://welle/dcp#Cow_Function">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Voluntary_Reason"/>
+        <rdfs:label xml:lang="en">Cow Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Cummulative_Feed_Cost -->
+
+    <owl:Class rdf:about="http://welle/dcp#Cummulative_Feed_Cost">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Feed_Cost"/>
+        <rdfs:label xml:lang="en">Cummulative Feed Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Cummulative_Milk_Value -->
+
+    <owl:Class rdf:about="http://welle/dcp#Cummulative_Milk_Value">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Value"/>
+        <rdfs:label xml:lang="en">Cummulative Milk Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Daily_Feed_Cost -->
+
+    <owl:Class rdf:about="http://welle/dcp#Daily_Feed_Cost">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Feed_Cost"/>
+        <rdfs:label xml:lang="en">Daily Feed Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Daily_Milk_Value -->
+
+    <owl:Class rdf:about="http://welle/dcp#Daily_Milk_Value">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Value"/>
+        <rdfs:label xml:lang="en">Daily Milk Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Day_305_Fat -->
+
+    <owl:Class rdf:about="http://welle/dcp#Day_305_Fat">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+        <rdfs:label xml:lang="en">Day 305 Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Day_305_Milk -->
+
+    <owl:Class rdf:about="http://welle/dcp#Day_305_Milk">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Day_305_Protein -->
+
+    <owl:Class rdf:about="http://welle/dcp#Day_305_Protein">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+        <rdfs:label xml:lang="en">Day 305 Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Days_in_Milk -->
+
+    <owl:Class rdf:about="http://welle/dcp#Days_in_Milk">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Days in Milk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Days_in_Milk_at_Peak -->
+
+    <owl:Class rdf:about="http://welle/dcp#Days_in_Milk_at_Peak">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Days_in_Milk"/>
+        <rdfs:label xml:lang="en">Days in Milk at Peak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Efficiency_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Efficiency_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Efficiency Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Fat_Persistency -->
+
+    <owl:Class rdf:about="http://welle/dcp#Fat_Persistency">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Persistency"/>
+        <rdfs:label xml:lang="en">Fat Persistency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Fat_To_Date -->
+
+    <owl:Class rdf:about="http://welle/dcp#Fat_To_Date">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+        <rdfs:label xml:lang="en">Fat To Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Feed_Cost -->
+
+    <owl:Class rdf:about="http://welle/dcp#Feed_Cost">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Efficiency_Trait"/>
+        <rdfs:label xml:lang="en">Feed Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Genetic_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Genetic_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Genetic Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Herd -->
+
+    <owl:Class rdf:about="http://welle/dcp#Herd">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Population"/>
+        <rdfs:label xml:lang="en">Herd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Herd_Leave_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Herd_Leave_Reason">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">Herd Leave Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Infection -->
+
+    <owl:Class rdf:about="http://welle/dcp#Infection">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Involuntary_Reason"/>
+        <rdfs:label xml:lang="en">Infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Involuntary_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Involuntary_Reason">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Herd_Leave_Reason"/>
+        <rdfs:label xml:lang="en">Involuntary Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Lactation_End_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Lactation_End_Reason">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">Lactation End Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Lactation_Number -->
+
+    <owl:Class rdf:about="http://welle/dcp#Lactation_Number">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Lactation Number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Lactation_Start_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Lactation_Start_Reason">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">Lactation Start Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Longevity_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Longevity_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Longevity Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Metabolic -->
+
+    <owl:Class rdf:about="http://welle/dcp#Metabolic">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Well_Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_BHB_Concentration -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_BHB_Concentration">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+        <rdfs:label xml:lang="en">Milk BHB Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Composition_Test -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Composition_Test">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Milk Composition Test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Composition_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Composition_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quality_Trait"/>
+        <rdfs:label xml:lang="en">Milk Composition Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Fat_Concentration -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Fat_Concentration">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+        <rdfs:label xml:lang="en">Milk Fat Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Lactose_Concentration -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Lactose_Concentration">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+        <rdfs:label xml:lang="en">Milk Lactose Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Persistency -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Persistency">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Persistency"/>
+        <rdfs:label xml:lang="en">Milk Persistency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Production_Issue -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Production_Issue">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Voluntary_Reason"/>
+        <rdfs:label xml:lang="en">Milk Production Issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Production_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Production_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <rdfs:label xml:lang="en">Milk Production Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Protein_Concentration -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Protein_Concentration">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Quality_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Quality_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Milk Quality Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Quantity_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Quantity_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Milk Quantity Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Somatic_Cell_Count. -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Somatic_Cell_Count.">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_To_Date -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_To_Date">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Urea_Nitrogen_Concentration -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Urea_Nitrogen_Concentration">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Composition_Trait"/>
+        <rdfs:label xml:lang="en">Milk Urea Nitrogen Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Value -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Value">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Efficiency_Trait"/>
+        <rdfs:label xml:lang="en">Milk Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milk_Volume_Measurement -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milk_Volume_Measurement">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Milk Volume Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Frequency -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Frequency">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">Milking Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Pattern -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">Milking Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Speed -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Speed">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Behaviour_Trait"/>
+        <rdfs:label xml:lang="en">Milking Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Speed_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Speed_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Speed_Scoring -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Speed_Scoring">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Milking Speed Scoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Temperament -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Temperament">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Behaviour_Trait"/>
+        <rdfs:label xml:lang="en">Milking Temperament</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Milking_Temperament_Scoring -->
+
+    <owl:Class rdf:about="http://welle/dcp#Milking_Temperament_Scoring">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Milking Temperament Scoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Peak_Milk_Yield -->
+
+    <owl:Class rdf:about="http://welle/dcp#Peak_Milk_Yield">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quantity_Trait"/>
+        <rdfs:label xml:lang="en">Peak Milk Yield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Persistency -->
+
+    <owl:Class rdf:about="http://welle/dcp#Persistency">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Production_Trait"/>
+        <rdfs:label xml:lang="en">Persistency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Physical_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Physical_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <arco:definition xml:lang="en">Directly observable characteristic of an animal.</arco:definition>
+        <rdfs:label xml:lang="en">Physical Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Pregnancy_Check -->
+
+    <owl:Class rdf:about="http://welle/dcp#Pregnancy_Check">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Planned_Process"/>
+        <rdfs:label xml:lang="en">Pregnancy Check</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Pregnancy_Status -->
+
+    <owl:Class rdf:about="http://welle/dcp#Pregnancy_Status">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Reproduction_Trait"/>
+        <rdfs:label xml:lang="en">Pregnancy Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Production_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Production_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Production Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Protein_Persistency -->
+
+    <owl:Class rdf:about="http://welle/dcp#Protein_Persistency">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Persistency"/>
+        <rdfs:label xml:lang="en">Protein Persistency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Protein_To_Date -->
+
+    <owl:Class rdf:about="http://welle/dcp#Protein_To_Date">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Accumulated_Yield"/>
+        <rdfs:label xml:lang="en">Protein To Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Reproduction -->
+
+    <owl:Class rdf:about="http://welle/dcp#Reproduction">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Involuntary_Reason"/>
+        <rdfs:label xml:lang="en">Reproduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Reproduction_Trait -->
+
+    <owl:Class rdf:about="http://welle/dcp#Reproduction_Trait">
+        <rdfs:subClassOf rdf:resource="http://welle/arc#Animal_Trait"/>
+        <rdfs:label xml:lang="en">Reproduction Trait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Reproductive_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Reproductive_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Reproductive Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#SCC_Linear_Score -->
+
+    <owl:Class rdf:about="http://welle/dcp#SCC_Linear_Score">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Somatic_Cell_Count."/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Sale -->
+
+    <owl:Class rdf:about="http://welle/dcp#Sale">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Voluntary_Reason"/>
+        <rdfs:label xml:lang="en">Sale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Sex -->
+
+    <owl:Class rdf:about="http://welle/dcp#Sex">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Physical_Trait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Temperament_Evaluation -->
+
+    <owl:Class rdf:about="http://welle/dcp#Temperament_Evaluation">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Genetic_Evaluation"/>
+        <rdfs:label xml:lang="en">Temperament Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Unspecified_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Unspecified_Reason">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Herd_Leave_Reason"/>
+        <rdfs:label xml:lang="en">Unspecified Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Voluntary_Reason -->
+
+    <owl:Class rdf:about="http://welle/dcp#Voluntary_Reason">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Herd_Leave_Reason"/>
+        <rdfs:label xml:lang="en">Voluntary Reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Well_Being -->
+
+    <owl:Class rdf:about="http://welle/dcp#Well_Being">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Involuntary_Reason"/>
+        <rdfs:label xml:lang="en">Well Being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#Yield_Index -->
+
+    <owl:Class rdf:about="http://welle/dcp#Yield_Index">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quantity_Trait"/>
+        <rdfs:label xml:lang="en">Yield Index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#24_Hour_Fat -->
+
+    <owl:Class rdf:about="http://welle/dcp#24_Hour_Fat">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#24_Hour_Yield"/>
+        <rdfs:label xml:lang="en">24 Hour Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#24_Hour_Milk -->
+
+    <owl:Class rdf:about="http://welle/dcp#24_Hour_Milk">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#24_Hour_Yield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#24_Hour_Protein -->
+
+    <owl:Class rdf:about="http://welle/dcp#24_Hour_Protein">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#24_Hour_Yield"/>
+        <rdfs:label xml:lang="en">24 Hour Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://welle/dcp#24_Hour_Yield -->
+
+    <owl:Class rdf:about="http://welle/dcp#24_Hour_Yield">
+        <rdfs:subClassOf rdf:resource="http://welle/dcp#Milk_Quantity_Trait"/>
+        <rdfs:label xml:lang="en">24 Hour Yield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://welle/dcp#Arthritis -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Arthritis">
+        <rdf:type rdf:resource="http://welle/dcp#Age_or_Fatigue"/>
+        <rdfs:label>Arthritis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Bad_Temperament -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Bad_Temperament">
+        <rdf:type rdf:resource="http://welle/dcp#Cow_Function"/>
+        <rdfs:label xml:lang="en">Bad Temperament</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Bloat -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Bloat">
+        <rdf:type rdf:resource="http://welle/dcp#Metabolic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Culled_For_Conformation -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Culled_For_Conformation">
+        <rdf:type rdf:resource="http://welle/dcp#Cow_Function"/>
+        <rdfs:label xml:lang="en">Culled For Conformation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Dairy_Production -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Dairy_Production">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Dairy Production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Difficult_Calving -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Difficult_Calving">
+        <rdf:type rdf:resource="http://welle/dcp#Reproduction"/>
+        <rdfs:label xml:lang="en">Difficult Calving</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Displaced_Abomasum -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Displaced_Abomasum">
+        <rdf:type rdf:resource="http://welle/dcp#Metabolic"/>
+        <rdfs:label xml:lang="en">Displaced Abomasum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Electrocution -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Electrocution">
+        <rdf:type rdf:resource="http://welle/dcp#Accident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Exported -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Exported">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Exported</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Feet_and_Legs_Problem -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Feet_and_Legs_Problem">
+        <rdf:type rdf:resource="http://welle/dcp#Infection"/>
+        <rdfs:label xml:lang="en">Feet and Legs Problem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Herd_Off_Test -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Herd_Off_Test">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Herd Off Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Injury_To_Udder_Or_Teats -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Injury_To_Udder_Or_Teats">
+        <rdf:type rdf:resource="http://welle/dcp#Accident"/>
+        <rdfs:label>Injury To Udder Or Teats</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Injury_or_Accident -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Injury_or_Accident">
+        <rdf:type rdf:resource="http://welle/dcp#Accident"/>
+        <rdfs:label>Injury or Accident</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Johnes -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Johnes">
+        <rdf:type rdf:resource="http://welle/dcp#Contagious_Desease"/>
+        <rdfs:label xml:lang="en">Johnes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Leukosis -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Leukosis">
+        <rdf:type rdf:resource="http://welle/dcp#Contagious_Desease"/>
+        <rdfs:label xml:lang="en">Leukosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Low_Fat -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Low_Fat">
+        <rdf:type rdf:resource="http://welle/dcp#Milk_Production_Issue"/>
+        <rdfs:label xml:lang="en">Low Fat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Low_Milk_Yield -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Low_Milk_Yield">
+        <rdf:type rdf:resource="http://welle/dcp#Milk_Production_Issue"/>
+        <rdfs:label xml:lang="en">Low Milk Yield</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Low_Protein -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Low_Protein">
+        <rdf:type rdf:resource="http://welle/dcp#Milk_Production_Issue"/>
+        <rdfs:label xml:lang="en">Low Protein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Mastitis_and_or_Hight_SCC -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Mastitis_and_or_Hight_SCC">
+        <rdf:type rdf:resource="http://welle/dcp#Infection"/>
+        <rdfs:label xml:lang="en">Mastitis and or Hight SCC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Milk_Fever -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Milk_Fever">
+        <rdf:type rdf:resource="http://welle/dcp#Metabolic"/>
+        <rdfs:label xml:lang="en">Milk Fever</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Old_Age -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Old_Age">
+        <rdf:type rdf:resource="http://welle/dcp#Age_or_Fatigue"/>
+        <rdfs:label xml:lang="en">Old Age</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Peritonitis -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Peritonitis">
+        <rdf:type rdf:resource="http://welle/dcp#Reproduction"/>
+        <rdfs:label xml:lang="en">Peritonitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Pneumonia -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Pneumonia">
+        <rdf:type rdf:resource="http://welle/dcp#Infection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Poison -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Poison">
+        <rdf:type rdf:resource="http://welle/dcp#Accident"/>
+        <rdfs:label>Age or Fatigue</rdfs:label>
+        <rdfs:label>Poison</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Rented_Out -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Rented_Out">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Rented Out</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Reproductive_Issue -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Reproductive_Issue">
+        <rdf:type rdf:resource="http://welle/dcp#Reproduction"/>
+        <rdfs:label xml:lang="en">Reproductive Issue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Sickness -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Sickness">
+        <rdf:type rdf:resource="http://welle/dcp#Well_Being"/>
+        <rdfs:label xml:lang="en">Sickness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Slow_Milker -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Slow_Milker">
+        <rdf:type rdf:resource="http://welle/dcp#Cow_Function"/>
+        <rdfs:label xml:lang="en">Slow Milker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Sold_For_Veal -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Sold_For_Veal">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Sold For Veal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Staph_Aureus -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Staph_Aureus">
+        <rdf:type rdf:resource="http://welle/dcp#Infection"/>
+        <rdfs:label xml:lang="en">Staph Aureus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Transfer -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Transfer">
+        <rdf:type rdf:resource="http://welle/dcp#Sale"/>
+        <rdfs:label xml:lang="en">Transfer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://welle/dcp#Udder_Breakdown -->
+
+    <owl:NamedIndividual rdf:about="http://welle/dcp#Udder_Breakdown">
+        <rdf:type rdf:resource="http://welle/dcp#Age_or_Fatigue"/>
+        <rdfs:label xml:lang="en">Udder Breakdown</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
